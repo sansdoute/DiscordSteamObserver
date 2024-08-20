@@ -76,14 +76,12 @@ def checkDifferences():
     toSend = []
 
     for personNew, personOld in zip(updatedInfo, checkData):
-        print("hello")
 
         if personOld['response']['players'][0]['personastate'] == 1 and personNew['response']['players'][0]['personastate'] == 0:
             personOld['response']['players'][0]['personastate'] = 0
 
         if personOld['response']['players'][0]['personastate'] == 0 and personNew['response']['players'][0]['personastate'] == 1:
             personOld['response']['players'][0]['personastate'] = 1
-            print("inside")
             toSend.append(personOld)
 
         
