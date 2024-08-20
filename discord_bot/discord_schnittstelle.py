@@ -5,15 +5,12 @@ from database import fetchStartdataDB
 from database import checkDifferences
 
 
-
-# Replace 'your-token-here' with your bot's token
 TOKEN = ''
 
 # Define the intents your bot will use
 intents = discord.Intents.default()
 intents.message_content = True  # Enable this if you want to receive message content events
 
-# Define the bot with a command prefix and intents
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 
