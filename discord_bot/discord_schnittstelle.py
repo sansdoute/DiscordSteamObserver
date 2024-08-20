@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands, tasks
-from steam_schnittstelle import getSteamData
 from steam_schnittstelle import getUserInfo
 from database import fetchStartdataDB
 from database import checkDifferences
