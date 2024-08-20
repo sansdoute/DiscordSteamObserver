@@ -8,9 +8,7 @@ api_key = ''
 
 
 def getUserInfo(steam_id: str, discord_id):
-    # Your Steam API key
 
-    # URL for the GetPlayerSummaries API endpoint
     url = f'http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={api_key}&steamids={steam_id}'
 
     # Make the request
